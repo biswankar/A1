@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             this.speedY = Math.random() * 7 + 5; // Fast falling speed
             this.speedX = (Math.random() - 0.5) * 4; // Spread out sideways
             
-            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&❤️"; 
+            const chars = "ILoveYouBaby@#$%&❤️"; //"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&❤️"; 
             this.char = chars[Math.floor(Math.random() * chars.length)];
             this.color = `rgba(255, 255, 255, ${Math.random() * 0.8 + 0.2})`;
         }
