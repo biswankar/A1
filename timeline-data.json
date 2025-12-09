@@ -1,7 +1,14 @@
 [
     {
+        "type": "text",
+        "header": "Happy Anniversary ❤️",
+        "title": "To My Wonderful Wife",
+        "caption": "I wanted to create something special for us to look back on our first year (and the years before it). <br><br>From our first nervous photos to our big trips, every moment with you has been the best part of my life.<br><br>Here is a little timeline of us. I love you so much.<br><br>(Scroll down to begin...)",
+        "src": "./images/1.jpg"
+    },
+    {
         "id": 1,
-        "date": "July 25,2018",
+        "date": "July 25, 2018",
         "header": "",
         "title": "First photo of us",
         "caption": "",
@@ -92,7 +99,7 @@
         "date": "",
         "header": "",
         "title": "First cross friends group thing for me",
-        "caption":  "",
+        "caption": "",
         "src": "./images/9.jpg"
     },
     {
@@ -100,7 +107,7 @@
         "date": "",
         "header": "",
         "title": "2nd photo of just us after relationship",
-        "caption":  "Lost track of order, too much code ;(",
+        "caption": "Lost track of order, too much code ;(",
         "src": "./images/9_2.jpg"
     },
     {
@@ -108,7 +115,7 @@
         "date": "22 Sep, 2018",
         "header": "",
         "title": "First photo of us togather after official relationship",
-        "caption":  "",
+        "caption": "",
         "src": "./images/11.jpg"
     },
     {
@@ -116,7 +123,7 @@
         "date": "22 Sep, 2018",
         "header": "",
         "title": "First photo of us togather after official relationship",
-        "caption":  "",
+        "caption": "",
         "src": "./images/10.jpg"
     },
     {
@@ -124,7 +131,7 @@
         "date": "",
         "header": "",
         "title": "First official 'date' post relationship",
-        "caption":  "",
+        "caption": "",
         "src": "./images/12.jpg"
     },
     {
@@ -132,7 +139,7 @@
         "date": "",
         "header": "",
         "title": "First dance night",
-        "caption":  "",
+        "caption": "",
         "src": "./images/13.jpg"
     },
     {
@@ -140,7 +147,7 @@
         "date": "",
         "header": "",
         "title": "First photo on my one plus ;)",
-        "caption":  "Also first diwali :)",
+        "caption": "Also first diwali :)",
         "src": "./images/14.jpg"
     },
     {
@@ -148,7 +155,7 @@
         "date": "",
         "header": "",
         "title": "First Diwali",
-        "caption":  "",
+        "caption": "",
         "src": "./images/15.jpg"
     },
     {
@@ -156,7 +163,7 @@
         "date": "",
         "header": "",
         "title": "First Diwali",
-        "caption":  "",
+        "caption": "",
         "src": "./images/16.jpg"
     },
     {
@@ -164,7 +171,7 @@
         "date": "",
         "header": "",
         "title": "First Diwali",
-        "caption":  "",
+        "caption": "",
         "src": "./images/17.jpg"
     },
     {
@@ -172,7 +179,7 @@
         "date": "",
         "header": "",
         "title": "First fancy date",
-        "caption":  "",
+        "caption": "",
         "src": "./images/18.jpg"
     },
     {
@@ -180,7 +187,7 @@
         "date": "",
         "header": "",
         "title": "First fancy date",
-        "caption":  "",
+        "caption": "",
         "src": "./images/19.jpg"
     },
     {
@@ -188,7 +195,7 @@
         "date": "",
         "header": "",
         "title": "First fancy date",
-        "caption":  "",
+        "caption": "",
         "src": "./images/20.JPG"
     },
     {
@@ -196,7 +203,7 @@
         "date": "",
         "header": "",
         "title": "First big trip",
-        "caption":  "",
+        "caption": "",
         "src": "./images/21.jpg"
     },
     {
@@ -204,7 +211,7 @@
         "date": "",
         "header": "",
         "title": "First big trip",
-        "caption":  "Tf were you doing ?",
+        "caption": "Tf were you doing ?",
         "src": "./images/22.jpg"
     },
     {
@@ -212,7 +219,7 @@
         "date": "",
         "header": "",
         "title": "First big trip",
-        "caption":  "",
+        "caption": "",
         "src": "./images/23.jpg"
     },
     {
@@ -220,7 +227,7 @@
         "date": "",
         "header": "",
         "title": "First big trip",
-        "caption":  "",
+        "caption": "",
         "src": "./images/24.jpg"
     },
     {
@@ -228,7 +235,7 @@
         "date": "",
         "header": "",
         "title": "First big trip",
-        "caption":  "",
+        "caption": "",
         "src": "./images/25.jpg"
     },
     {
@@ -236,7 +243,7 @@
         "date": "",
         "header": "",
         "title": "First big trip",
-        "caption":  "",
+        "caption": "",
         "src": "./images/26.jpg"
     },
     {
@@ -244,7 +251,7 @@
         "date": "",
         "header": "",
         "title": "No firsts, but i liked these photos",
-        "caption":  "",
+        "caption": "",
         "src": "./images/27.JPG"
     },
     {
@@ -252,7 +259,7 @@
         "date": "",
         "header": "",
         "title": "No firsts, but i liked these photos",
-        "caption":  "",
+        "caption": "",
         "src": "./images/28.jpg"
     },
     {
@@ -260,7 +267,7 @@
         "date": "",
         "header": "",
         "title": "No firsts, but i liked these photos",
-        "caption":  "",
+        "caption": "",
         "src": "./images/29.jpg"
     },
     {
@@ -268,7 +275,7 @@
         "date": "",
         "header": "",
         "title": "No firsts, but i liked these photos",
-        "caption":  "",
+        "caption": "",
         "src": "./images/30.JPG"
     },
     {
@@ -276,7 +283,7 @@
         "date": "",
         "header": "",
         "title": "No firsts, but i liked these photos",
-        "caption":  "",
+        "caption": "",
         "src": "./images/31.JPG"
     },
     {
@@ -284,7 +291,7 @@
         "date": "",
         "header": "",
         "title": "No firsts, but i liked these photos",
-        "caption":  "Also first Dora typecast",
+        "caption": "Also first Dora typecast",
         "src": "./images/32.JPG"
     },
     {
@@ -292,7 +299,7 @@
         "date": "",
         "header": "",
         "title": "First buffet",
-        "caption":  "",
+        "caption": "",
         "src": "./images/33.JPG"
     },
     {
@@ -300,7 +307,7 @@
         "date": "",
         "header": "",
         "title": "First car trip",
-        "caption":  "",
+        "caption": "",
         "src": "./images/34.JPG"
     },
     {
@@ -308,7 +315,7 @@
         "date": "",
         "header": "",
         "title": "First wedding(not ours)",
-        "caption":  "Also aise kapdo m first",
+        "caption": "Also aise kapdo m first",
         "src": "./images/35.JPG"
     },
     {
@@ -316,7 +323,7 @@
         "date": "",
         "header": "",
         "title": "First VC SS",
-        "caption":  "",
+        "caption": "",
         "src": "./images/35_2.jpg"
     },
     {
@@ -324,7 +331,7 @@
         "date": "",
         "header": "",
         "title": "First time in mots' town",
-        "caption":  "",
+        "caption": "",
         "src": "./images/36.JPG"
     },
     {
@@ -332,7 +339,7 @@
         "date": "",
         "header": "",
         "title": "First double date",
-        "caption":  "",
+        "caption": "",
         "src": "./images/37.JPG"
     },
     {
@@ -340,7 +347,7 @@
         "date": "",
         "header": "",
         "title": "First beach togather",
-        "caption":  "",
+        "caption": "",
         "src": "./images/38.JPG"
     },
     {
@@ -348,7 +355,7 @@
         "date": "",
         "header": "",
         "title": "First Roka",
-        "caption":  "(And final Roka)",
+        "caption": "(And final Roka)",
         "src": "./images/39.JPG"
     },
     {
@@ -356,7 +363,7 @@
         "date": "",
         "header": "",
         "title": "First engagement",
-        "caption":  "And final Engagement",
+        "caption": "And final Engagement",
         "src": "./images/40.JPG"
     },
     {
@@ -364,7 +371,7 @@
         "date": "",
         "header": "",
         "title": "First engagement",
-        "caption":  "And final Engagement",
+        "caption": "And final Engagement",
         "src": "./images/41.jpg"
     },
     {
@@ -372,7 +379,7 @@
         "date": "",
         "header": "First $$ trip",
         "title": "",
-        "caption":  "",
+        "caption": "",
         "src": "./images/42.jpeg"
     },
     {
@@ -380,7 +387,7 @@
         "date": "",
         "header": "",
         "title": "First big event going in as a couple",
-        "caption":  "",
+        "caption": "",
         "src": "./images/43.jpg"
     },
     {
@@ -388,7 +395,7 @@
         "date": "",
         "header": "",
         "title": "First non metal ride",
-        "caption":  "Potential pet when I retire after you DSM",
+        "caption": "Potential pet when I retire after you DSM",
         "src": "./images/44.jpeg"
     },
     {
@@ -396,7 +403,7 @@
         "date": "",
         "header": "",
         "title": "First desert",
-        "caption":  "For me and togather",
+        "caption": "For me and togather",
         "src": "./images/45.jpg"
     },
     {
@@ -404,7 +411,7 @@
         "date": "",
         "header": "",
         "title": "First haldi",
-        "caption":  "and final haldi",
+        "caption": "and final haldi",
         "src": "./images/46.jpg"
     },
     {
@@ -412,7 +419,7 @@
         "date": "",
         "header": "",
         "title": "First haldi",
-        "caption":  "and final haldi",
+        "caption": "and final haldi",
         "src": "./images/47.jpg"
     },
     {
@@ -420,7 +427,7 @@
         "date": "",
         "header": "",
         "title": "First haldi",
-        "caption":  "and final haldi",
+        "caption": "and final haldi",
         "src": "./images/48.jpg"
     },
     {
@@ -428,7 +435,7 @@
         "date": "",
         "header": "",
         "title": "First wedding",
-        "caption":  "and final wedding",
+        "caption": "and final wedding",
         "src": "./images/49.jpg"
     },
     {
@@ -436,7 +443,7 @@
         "date": "",
         "header": "",
         "title": "Oh wow",
-        "caption":  "",
+        "caption": "",
         "src": "./images/50.jpg"
     },
     {
@@ -444,7 +451,7 @@
         "date": "",
         "header": "",
         "title": "A year to this beb <3",
-        "caption":  "Dont know how to heart in code, make do for now. No time ;(",
+        "caption": "Dont know how to heart in code, make do for now. No time ;(",
         "src": "./images/51.jpg"
     },
     {
@@ -452,14 +459,15 @@
         "date": "",
         "header": "",
         "title": "First reception",
-        "caption":  "and ofc final too. Also first proposal lol",
+        "caption": "and ofc final too. Also first proposal lol",
         "src": "./images/52.jpg"
     },
     {
+        "id": 58,
         "date": "",
         "header": "",
         "title": "First reception",
-        "caption":  "",
+        "caption": "",
         "src": "./images/53.jpg"
     },
     {
@@ -467,7 +475,7 @@
         "date": "",
         "header": "",
         "title": "Too much 'first' ",
-        "caption":  "A good photo",
+        "caption": "A good photo",
         "src": "./images/54.jpg"
     },
     {
@@ -475,7 +483,7 @@
         "date": "",
         "header": "",
         "title": "Not done with first lawl ",
-        "caption":  "You know what this is, can't blame you if you can't remember",
+        "caption": "You know what this is, can't blame you if you can't remember",
         "src": "./images/54_2.jpg"
     },
     {
@@ -483,7 +491,7 @@
         "date": "",
         "header": "",
         "title": "First photo of us outside india",
-        "caption":  "",
+        "caption": "",
         "src": "./images/55.jpg"
     },
     {
@@ -491,7 +499,7 @@
         "date": "",
         "header": "",
         "title": "Not first, i like this blurred photo ",
-        "caption":  "",
+        "caption": "",
         "src": "./images/56.jpg"
     },
     {
@@ -499,7 +507,7 @@
         "date": "",
         "header": "",
         "title": "First $$$ trip",
-        "caption":  "Sorry again for bad Bday",
+        "caption": "Sorry again for bad Bday",
         "src": "./images/57.jpg"
     },
     {
@@ -507,7 +515,7 @@
         "date": "",
         "header": "",
         "title": "First concert",
-        "caption":  "",
+        "caption": "",
         "src": "./images/58.jpg"
     },
     {
@@ -515,7 +523,7 @@
         "date": "",
         "header": "",
         "title": "First Paris",
-        "caption":  "Dreamy",
+        "caption": "Dreamy",
         "src": "./images/59.jpg"
     },
     {
@@ -523,7 +531,7 @@
         "date": "",
         "header": "",
         "title": "Nothing first. Big milestore to reach here",
-        "caption":  "Cant even afford food ;(",
+        "caption": "Cant even afford food ;(",
         "src": "./images/61.jpg"
     },
     {
@@ -531,7 +539,7 @@
         "date": "",
         "header": "",
         "title": "first snow pic",
-        "caption":  "",
+        "caption": "",
         "src": "./images/62.jpg"
     },
     {
@@ -582,13 +590,19 @@
         "caption": "",
         "src": "./images/67.jpg"
     },
-    
     {
         "id": 74,
         "date": "",
         "header": "",
         "title": "First south east asia country",
         "caption": "Also managed to do a first combined family thing",
+        "src": "./images/68.jpg"
+    },
+    {
+        "type": "text",
+        "header": "To Forever 🥂",
+        "title": "Happy First Anniversary",
+        "caption": "This is just the start of our code together.<br><br>I love you more than words (or functions) can say.<br><br>Yours,<br>[Your Name]",
         "src": "./images/68.jpg"
     }
 ]

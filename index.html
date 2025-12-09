@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas id="particle-canvas"></canvas>
 
     <div id="dynamic-background"></div>
 
-    <div id="start-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:black; z-index:999; display:flex; justify-content:center; align-items:center; flex-direction:column; color:white;">
-        <h1>Happy Anniversary Love</h1>
-        <p>Glad you didn't throw away the bland card</p>
-        <p>Here's the rest of it</p>
-        <button id="start-btn" style="margin-top:20px; padding:10px 20px; font-size:1.2rem; cursor:pointer;">Enter ❤️</button>
+    <div id="start-overlay" class="overlay-screen">
+        <h1>Happy Anniversary Love ❤️</h1>
+        <p>Glad you didn't throw away the bland card/cover</p>
+        <p>Here is the rest of it</p>
+        <button id="start-btn">Get dissapointed</button>
+    </div>
+
+    <div id="quiz-overlay" class="overlay-screen" style="display:none;">
+        <h1>🔐 For Our Eyes Only Beb</h1>
+        <p id="quiz-question">Loading question...</p>
+        <input type="text" id="quiz-input" placeholder="Type answer here..." autocomplete="off">
+        <button id="quiz-submit-btn">Unlock</button>
+        <p id="quiz-error" style="color: #ff6b6b; display: none; margin-top: 10px;">Try again, my love! 😉</p>
     </div>
 
     <main class="timeline-container">
         </main>
 
     <div id="music-controls">🎵</div>
-    
     <audio id="bg-music"></audio>
 
     <script src="script.js"></script>
