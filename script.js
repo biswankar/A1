@@ -12,31 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const bgLayer = document.getElementById('dynamic-background');
 
     // --- CONFIGURATION ---
-    const playlist = ['./music/1.mp3', './music/2.mp3']; // Ensure these exist!
+    const playlist = ['./music/1.mp3', './music/2.mp3']; 
     
     // QUIZ DATA
-    // The logic below will automatically ignore capitalization and spaces.
     const securityQuestions = [
-        { 
-            q: "Destination of first bike trip?", 
-            a: ["nandihills", "nandi hill", "nandi hills"] 
-        },
-        { 
-            q: "Most frequently visited date location in the first 4 months?", 
-            a: ["beer cafe", "beercafe", "the beer cafe"] 
-        },
-        { 
-            q: "Colour of your dress when I first noticed ya?", 
-            a: ["red", "dark red"] 
-        },
-        { 
-            q: "My gamer tag", 
-            a: ["captain winter", "captainwinter", "capt winter"] 
-        },
-        { 
-            q: "Where did we eat a cake just so you could take a dump?", 
-            a: ["ccd", "cafe coffee day", "cafecoffeeday"] 
-        }
+        { q: "Destination of first bike trip ?", a: ["nandihills", "nandi hill", "nandi hills"] },
+        { q: "Most frequently visited date location in the first 4 months?", a: ["beer cafe", "beercafe", "the beer cafe"] },
+        { q: "Colour of your dress when I first noticed ya?", a: ["red", "dark red"] },
+        { q: "My gamer tag", a: ["captain winter", "captainwinter", "capt winter"] },
+        { q: "Where did we eat a cake just so you could take a dump", a: ["ccd", "cafe coffee day", "cafecoffeeday"] }
     ];
 
     let currentSongIndex = 0;
@@ -44,11 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentQuestion = null;
 
     // ============================================
-    // 1. PARTICLES (Falling Characters)
+    // 1. PARTICLES (Continuous Stream Logic)
     // ============================================
     const canvas = document.getElementById('particle-canvas');
     const ctx = canvas.getContext('2d');
+    
     let particles = [];
+    let isHolding = false; // Tracks if user is touching screen
+    let touchX = 0;
+    let touchY = 0;
+    const MAX_PARTICLES = 600; // Safety limit to prevent crash
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
@@ -62,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             this.x = x;
             this.y = y;
             this.size = Math.random() * 20 + 10; 
-            this.speedY = Math.random() * 7 + 5; 
-            this.speedX = (Math.random() - 0.5) * 2;
-            // Added the Heart emoji to the falling characters!
+            this.speedY = Math.random() * 7 + 5; // Fast falling speed
+            this.speedX = (Math.random() - 0.5) * 4; // Spread out sideways
+            
             const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&❤️"; 
             this.char = chars[Math.floor(Math.random() * chars.length)];
             this.color = `rgba(255, 255, 255, ${Math.random() * 0.8 + 0.2})`;
@@ -83,6 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleParticles() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // 1. If Holding AND below max limit, add new particles
+        if (isHolding && particles.length < MAX_PARTICLES) {
+            // Spawn 4 particles per frame for a heavy stream effect
+            for (let k = 0; k < 4; k++) {
+                particles.push(new Particle(touchX, touchY));
+            }
+        }
+
+        // 2. Update existing particles
         for (let i = 0; i < particles.length; i++) {
             particles[i].update();
             particles[i].draw();
@@ -95,14 +94,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     handleParticles();
 
-    window.addEventListener('pointerdown', (e) => {
-        for (let i = 0; i < 10; i++) {
-            particles.push(new Particle(e.clientX, e.clientY));
+    // --- Touch/Mouse Handlers ---
+    function onPointerDown(e) {
+        isHolding = true;
+        touchX = e.clientX;
+        touchY = e.clientY;
+    }
+    
+    function onPointerMove(e) {
+        if (isHolding) {
+            touchX = e.clientX;
+            touchY = e.clientY;
         }
-    });
+    }
+
+    function onPointerUp() {
+        isHolding = false;
+    }
+
+    // Add listeners to window so it works anywhere
+    window.addEventListener('pointerdown', onPointerDown);
+    window.addEventListener('pointermove', onPointerMove);
+    window.addEventListener('pointerup', onPointerUp);
+    window.addEventListener('pointercancel', onPointerUp);
+
 
     // ============================================
-    // 2. QUIZ LOGIC (ROBUST: Ignores spaces/caps)
+    // 2. QUIZ LOGIC
     // ============================================
     function setupQuiz() {
         const randomIndex = Math.floor(Math.random() * securityQuestions.length);
@@ -111,14 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkAnswer() {
-        // 1. Get user input
         const rawInput = quizInput.value;
-        
-        // 2. Clean it: Lowercase + Replace ALL spaces with nothing
-        // " Captain Winter " becomes "captainwinter"
         const cleanInput = rawInput.toLowerCase().replace(/\s+/g, '');
-
-        // 3. Check against allowed answers (cleaning them too)
         const isCorrect = currentQuestion.a.some(answer => {
             const cleanAnswer = answer.toLowerCase().replace(/\s+/g, '');
             return cleanAnswer === cleanInput;
@@ -141,11 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     quizSubmit.addEventListener('click', checkAnswer);
-    
-    // Allow pressing "Enter" key to submit
-    quizInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') checkAnswer();
-    });
+    quizInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') checkAnswer(); });
+
 
     // ============================================
     // 3. CONTENT LOADING
@@ -155,14 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             data.forEach(item => {
                 let html = '';
-                
                 let headerHTML = '';
                 if (item.header && item.header.trim() !== "") {
                     headerHTML = `<div class="slide-header">${item.header}</div>`;
                 }
 
                 if (item.type === 'text') {
-                    // INTRO / OUTRO SLIDE
                     html = `
                     <div class="timeline-event text-slide">
                         ${headerHTML}
@@ -173,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>`;
                 } else {
-                    // PHOTO SLIDE
                     html = `
                     <div class="timeline-event">
                         ${headerHTML}
@@ -185,12 +191,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>`;
                 }
-
                 container.innerHTML += html;
             });
             initBackgroundObserver();
         })
         .catch(err => console.error(err));
+
 
     // ============================================
     // 4. BACKGROUND & AUDIO
@@ -207,7 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, { root: container, threshold: 0.6 });
-
         document.querySelectorAll('.timeline-event').forEach(s => observer.observe(s));
     }
 
