@@ -1,0 +1,185 @@
+/* --- Global Mobile Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent; /* Removes blue tap box on mobile */
+}
+/* --- The Dynamic Background Layer --- */
+#dynamic-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures it stays behind everything */
+    
+    /* The "Blasted Out" Look */
+    background-size: cover;
+    background-position: center;
+    filter: blur(25px) brightness(0.6); /* Heavy blur, slightly darkened */
+    transform: scale(1.2); /* Zoom in slightly to avoid blurry edges */
+    
+    /* Smooth transition when image changes */
+    transition: background-image 0.5s ease-in-out;
+    
+    /* Set an initial image just in case JS loads slowly */
+    /* Replace with your actual default filename */
+    background-image: url('./bg-images/default-bg.jpg'); 
+}
+body {
+    background-color: #000;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overscroll-behavior-y: none; /* Prevents "bounce" effect on Mac/iOS */
+    /* Ensure the body takes up exactly the visible screen */
+    height: 100dvh; 
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* --- The Main Scroll Container --- */
+.timeline-container {
+    height: 100dvh; /* Dynamic Height: adjusts for mobile address bars */
+    width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Forces the "snap" effect */
+    scroll-behavior: smooth;
+    
+    /* Hide scrollbars for a clean look */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.timeline-container::-webkit-scrollbar { 
+    display: none; /* Chrome/Safari */
+}
+
+/* --- The Individual 'Reel' --- */
+.timeline-event {
+    height: 100dvh;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
+    /* Flexbox Column: Header on top, Card below */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; /* Center vertical */
+    align-items: center;
+    position: relative;
+    padding: 20px; /* Padding around the edges */
+    gap: 15px; /* Space between Header and Card */
+}
+
+.slide-header {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 10;
+    /* Ensure it doesn't get crushed */
+    flex-shrink: 0; 
+}
+/* --- The Premium "Liquid Glass" Content Card --- */
+.content-card {
+    /* Glass styles remain... */
+    background: rgba(255, 255, 255, 0.08); 
+    backdrop-filter: blur(35px) saturate(150%);
+    -webkit-backdrop-filter: blur(35px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    
+    /* LAYOUT FIXES START HERE */
+    width: 100%;
+    max-width: 500px;
+    
+    /* This makes the card flexible internally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    
+    /* CONSTRAINT: Don't let the card be taller than 80% of the screen */
+    max-height: 85dvh; 
+    
+    /* If content is too big, scroll INSIDE the glass card */
+    overflow-y: auto; 
+}
+
+/* UPDATED Image Styles - The "Shrink" Logic */
+.content-card img {
+    /* Allow image to shrink if text needs room */
+    flex-shrink: 1; 
+    min-height: 0; /* Crucial for flex shrinking */
+    
+    max-height: 50dvh; /* Max height target */
+    width: auto;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+/* New Style for the Dynamic Header */
+
+.content-card h3, 
+.content-card p, 
+.content-card small {
+    flex-shrink: 0; 
+}
+
+
+/* --- Matching Liquid Glass Music Button --- */
+#music-controls {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 100;
+    
+    /* Matching the card style */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    
+    transition: all 0.2s ease-in-out;
+}
+
+#music-controls:active {
+    transform: scale(0.9);
+    background: rgba(255, 255, 255, 0.3); /* Gets brighter when tapped */
+}
+
+/* --- Start Overlay --- */
+#start-overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#start-overlay p {
+    color: #ccc;
+}
+#start-btn {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+}
