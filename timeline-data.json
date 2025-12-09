@@ -2,8 +2,8 @@
     {
         "type": "text",
         "header": "Happy Anniversary Babyyyyyy❤️",
-        "title": "Suprise me she says",
-        "caption": "Since its our first anniversary, I wanted to create soemthing different.<br><br>I have had a lot of firsts with you and every moment with you has been the best part of my life.<br><br>Here is a little list of all my firsts with you.<br><br> I love you so so much and I ain't leaving you. Hope you like this. Go ahead, start your doom scroll",
+        "title": "",
+        "caption": "Suprise me she says <br> Since its our first anniversary, here is soemthing unusual.<br>I have had a lot of firsts with you and every moment with you has been the best part of my life. Here is a little list of all my firsts with you.<br><br> I love you so so much and I am greatful for all of it. Hope you like this. Go ahead, start your doom scroll",
         "src": "./images/50.jpg"
     },
     {
@@ -67,11 +67,12 @@
         "date": "Aug 6, 2018",
         "header": "",
         "title": "Our first 'date'",
-        "caption": "of sorts",
+        "caption": "of sorts. So Sleepy",
         "src": "./images/7.jpg"
     },
     {
         "id": 9,
+        "skip": true,
         "date": "Aug 6, 2018",
         "header": "",
         "title": "Our first 'date'",
