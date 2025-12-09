@@ -163,6 +163,10 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {
+                // 1. NEW: Check if this item should be skipped
+                if (item.skip === true) {
+                    return; // Stop here and move to the next item
+                }
                 let html = '';
                 let headerHTML = '';
                 if (item.header && item.header.trim() !== "") {

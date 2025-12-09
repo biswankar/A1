@@ -4,7 +4,7 @@
         "header": "Happy Anniversary Babyyyyyy❤️",
         "title": "Suprise me she says",
         "caption": "Since its our first anniversary, I wanted to create soemthing different.<br><br>I have had a lot of firsts with you and every moment with you has been the best part of my life.<br><br>Here is a little list of all my firsts with you.<br><br> I love you so so much and I ain't leaving you. Hope you like this. Go ahead, start your doom scroll",
-        "src": "./images/1.jpg"
+        "src": "./images/50.jpg"
     },
     {
         "id": 1,
@@ -35,7 +35,7 @@
         "date": "Aug 5, 2018",
         "header": "",
         "title": "Our first trip",
-        "caption": "",
+        "caption": "Forgot to mention in the prev one. First jacket stolen",
         "src": "./images/3_2.jpg"
     },
     {
@@ -147,11 +147,12 @@
         "date": "",
         "header": "",
         "title": "First photo on my one plus ;)",
-        "caption": "Also first diwali :)",
+        "caption": "Also first diwali :). And also first T-shirt robbery",
         "src": "./images/14.jpg"
     },
     {
         "id": 19,
+        "skip": true,
         "date": "",
         "header": "",
         "title": "First Diwali",
@@ -160,6 +161,7 @@
     },
     {
         "id": 20,
+        "skip": true,
         "date": "",
         "header": "",
         "title": "First Diwali",
@@ -171,7 +173,7 @@
         "date": "",
         "header": "",
         "title": "First Diwali",
-        "caption": "",
+        "caption": "with plebs behind the camera",
         "src": "./images/17.jpg"
     },
     {
@@ -187,7 +189,7 @@
         "date": "",
         "header": "",
         "title": "First fancy date",
-        "caption": "",
+        "caption": "The moon and my moon",
         "src": "./images/19.jpg"
     },
     {
@@ -195,11 +197,12 @@
         "date": "",
         "header": "",
         "title": "First fancy date",
-        "caption": "",
+        "caption": "dont pull my shirt while taking photos 😠",
         "src": "./images/20.JPG"
     },
     {
         "id": 25,
+        "skip": true,
         "date": "",
         "header": "",
         "title": "First big trip",
@@ -216,6 +219,7 @@
     },
     {
         "id": 27,
+        "skip": true,
         "date": "",
         "header": "",
         "title": "First big trip",
@@ -224,6 +228,7 @@
     },
     {
         "id": 28,
+        "skip": true,
         "date": "",
         "header": "",
         "title": "First big trip",
@@ -243,7 +248,7 @@
         "date": "",
         "header": "",
         "title": "First big trip",
-        "caption": "",
+        "caption": "And the 2nd jacket stolen",
         "src": "./images/26.jpg"
     },
     {
@@ -264,6 +269,7 @@
     },
     {
         "id": 33,
+        "skip": true,
         "date": "",
         "header": "",
         "title": "No firsts, but i liked these photos",
@@ -274,15 +280,16 @@
         "id": 34,
         "date": "",
         "header": "",
-        "title": "No firsts, but i liked these photos",
+        "title": "No firsts again, but lets do this in amsterdamn next",
         "caption": "",
         "src": "./images/30.JPG"
     },
     {
         "id": 35,
+        "skip": true,
         "date": "",
         "header": "",
-        "title": "No firsts, but i liked these photos",
+        "title": "The first time you had ta",
         "caption": "",
         "src": "./images/31.JPG"
     },
@@ -290,8 +297,8 @@
         "id": 36,
         "date": "",
         "header": "",
-        "title": "No firsts, but i liked these photos",
-        "caption": "Also first Dora typecast",
+        "title": "First Dora",
+        "caption": "",
         "src": "./images/32.JPG"
     },
     {
@@ -355,7 +362,7 @@
         "date": "",
         "header": "",
         "title": "First Roka",
-        "caption": "(And final Roka)",
+        "caption": "(And last Roka)",
         "src": "./images/39.JPG"
     },
     {
@@ -371,7 +378,7 @@
         "date": "",
         "header": "",
         "title": "First engagement",
-        "caption": "And final Engagement",
+        "caption": "And LAST Engagement",
         "src": "./images/41.jpg"
     },
     {
@@ -600,9 +607,9 @@
     },
     {
         "type": "text",
-        "header": "To Forever 🥂",
-        "title": "Happy First Anniversary",
-        "caption": "This is just the start of our code together.<br><br>I love you more than words (or functions) can say.<br><br>Yours,<br>[Your Name]",
-        "src": "./images/68.jpg"
+        "header": "Okay, thats all I had for today",
+        "title": "Happy First Anniversary Baby 🥂",
+        "caption": "This is just the start of our long list of firsts and not firsts in our life. And I can't wait for rest of them.<br><br>I love you more than words (or photos) can say.<br>Hope you liked this",
+        "src": "./images/50.jpg"
     }
 ]
