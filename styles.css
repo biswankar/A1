@@ -108,8 +108,7 @@ body {
     z-index: 10;
     flex-shrink: 0; 
 }
-
-/* --- Glass Content Card --- */
+/* --- UPDATED: Smarter Content Card --- */
 .content-card {
     background: rgba(255, 255, 255, 0.08); 
     backdrop-filter: blur(35px) saturate(150%);
@@ -117,33 +116,47 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    
     width: 100%;
     max-width: 500px;
+    
+    /* Layout: Vertical Column */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 25px;
+    
+    /* Height Control: Never taller than 85% of screen */
     max-height: 85dvh; 
-    overflow-y: auto; 
+    overflow: hidden; /* Prevent spillover */
 }
 
+/* --- UPDATED: Smarter Image Sizing --- */
 .content-card img {
-    flex-shrink: 1; 
-    min-height: 0;
-    max-height: 50dvh;
+    /* 1. FLEX: Grow to fill available empty space */
+    flex: 1; 
+    
+    /* 2. CONSTRAINT: Don't disappear, but don't force scrolling */
+    min-height: 0; 
     width: auto;
     max-width: 100%;
+    
+    /* 3. FIT: Ensure the whole photo is visible (no cropping) */
+    object-fit: contain; 
+    
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    object-fit: contain;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.content-card h3, .content-card p, .content-card small { flex-shrink: 0; }
-.content-card h3 { font-size: 1.6rem; font-weight: 700; margin-bottom: 10px; color: #fff; }
-.content-card p { font-size: 1.05rem; color: rgba(255, 255, 255, 0.9); line-height: 1.5; margin-bottom: 15px; max-width: 90%; }
-.content-card small { color: rgba(255, 255, 255, 0.6); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; font-size: 0.75rem; }
+/* Ensure text never gets squished */
+.content-card h3, 
+.content-card p, 
+.content-card small {
+    flex-shrink: 0; /* Text will refuses to shrink */
+}
+
 
 /* --- Text Only Slides --- */
 .text-slide .content-card {
